@@ -1,0 +1,15 @@
+name: Build and Deploy Docker Image
+
+on:
+    push:
+        branches:
+            - main
+
+jobs:
+    build:
+        runs-on: ubuntu-latest
+        steps:
+            - name: Checkout
+              uses: actions/checkout@v3
+            
+            - run: echo "checkout done"
